@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,12 +12,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
   margin-bottom: 2em;
-}
-
-header img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Estilos para la barra de navegación */
@@ -26,7 +23,7 @@ nav {
   flex-wrap: wrap;
   background-color: lightgray;
   width: 90%;
-  margin: 2em 0;
+  margin-bottom: 2em;
 }
 
 nav a {
@@ -41,22 +38,23 @@ nav a {
   flex: 1 1 auto;
 }
 
-/* Estilos para el contenido principal */
-main article {
-  max-width: 800px;
-  margin: 0 auto;
+/* Estilos para el audio */
+audio {
+  width: 90%; /* Esto hará que el reproductor de audio sea receptivo, ocupando el 90% del ancho de su contenedor */
+  margin-bottom: 2em;
 }
 
 /* Estilos para el pie de página */
 footer {
-  background-color: black;
+  background-color: gray;
   color: white;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 90%;
+  border-radius: 5px;
+  margin: 2em auto;
   padding: 1em;
-  border-left: 5px;
-  border-right: 5px;
+  text-align: center;
 }
+
 
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (max-width: 600px) {
