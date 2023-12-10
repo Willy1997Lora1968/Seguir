@@ -52,8 +52,9 @@ main {
 
 /* Estilos para el pie de página */
 footer {
-  background-color: black;
-  color: white;
+  background-color: grey;
+  color: black;
+  border-radius: 5px;
   max-width: 90%;
   margin: 2em auto;
   padding: 1em;
