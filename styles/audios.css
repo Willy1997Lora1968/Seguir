@@ -43,19 +43,48 @@ nav a {
   flex: 1 1 auto;
 }
 
-/* Estilos para el contenido principal */
-main {
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: left;
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
 }
+
+form input[type="text"], form input[type="email"], form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #0c0000;
+  border-radius: 5px;
+  background-color: lightgray; /* Cambia el color de fondo a gris claro */
+}
+
+/* Estilos para el formulario */
+form input[type="submit"] {
+  cursor: pointer;
+  background-color: blue; /* Color de fondo */
+  border: 1px solid #0c0000; /* Borde sólido de 1px */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espacio alrededor del texto */
+  text-align: left; /* Alineación del texto */
+  text-decoration: none;
+  
+  font-size: 16px; /* Tamaño del texto */
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  width: 15%; /* El ancho se ajusta al contenido */
+  border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
 
 /* Estilos para el pie de página */
 footer {
   background-color: grey;
   color: black;
   border-radius: 5px;
-  max-width: 90%;
+  width: 80%; /* Asegura que el pie de página tenga el mismo ancho que la barra de navegación */
   margin: 2em auto;
   padding: 1em;
   text-align: center;

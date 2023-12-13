@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <meta name="description" content="Una audio educativo que cubre la artrofias, incluyendo psicologia, patologia, y neurogenica">
-  <meta name="keywords" content="audio atrofia muscular,  tres tipos de artrofias 1-spicologica 2-patologica 3-neurogenica">
+  <meta name="description"
+    content="Una audio educativo que cubre la artrofias, incluyendo psicologia, patologia, y neurogenica">
+  <meta name="keywords"
+    content="audio atrofia muscular,  tres tipos de artrofias 1-spicologica 2-patologica 3-neurogenica">
   <meta name="author" content="HM & LEI">
   <meta name="robots" content="index, follow">
   <meta http-equiv="content-language" content="es">
@@ -18,14 +20,16 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://traumatologia.netlify.app/audios.html">
   <meta property="og:title" content="Audios de Traumatología">
-  <meta property="og:description" content="Una audio educativo que cubre la artrofias, incluyendo psicologia, patologia, y neurogenica">
+  <meta property="og:description"
+    content="Una audio educativo que cubre la artrofias, incluyendo psicologia, patologia, y neurogenica">
   <meta property="og:image" content="https://traumatologia.netlify.app/images/dr.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://traumatologia.netlify.app/audios.html">
   <meta property="twitter:title" content="Audios de Traumatología">
-  <meta property="twitter:description" content="Una audio educativo que cubre la artrofias, incluyendo psicologia, patologia, y neurogenica">
+  <meta property="twitter:description"
+    content="Una audio educativo que cubre la artrofias, incluyendo psicologia, patologia, y neurogenica">
   <meta property="twitter:image" content="https://traumatologia.netlify.app/images/dr.jpg">
 
   <!-- Schema.org -->
@@ -56,13 +60,26 @@
     <p>El sentido de los audios toman el criterio de que las persona que tienen problemas visuales puedan tener acceso
       a todo el contenido de redacción</p>
   </header>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="imagenes.html">Imagenes</a>
-    <a href="audios.html">Audios</a>
-    <a href="aportes.html">Aportes</a>
-  </nav>
-  </header>
+  <main>
+    
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="imagenes.html">Imagenes</a>
+      <a href="audios.html">Audios</a>
+      <a href="aportes.html">Aportes</a>
+    </nav>
+    
+    <form name="sugerencias" method="POST" data-netlify="true">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br>
+      <label for="correo">Correo electrónico:</label><br>
+      <input type="email" id="correo" name="correo" required><br>
+      <label for="sugerencia">¿Qué te gustaría escuchar?</label><br>
+      <textarea id="sugerencia" name="sugerencia" rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Enviar">
+    </form>  
+
+  </main>
   <footer>
     HM & LEI © Todos los derechos reservados 2023
   </footer>
