@@ -1,39 +1,31 @@
-/* Estilos generales */
+/* audio.css */
+
 body {
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 5px; /* Añade un margen lateral de 5px */
-  box-sizing: border-box;
 }
 
-/* Estilos para el encabezado */
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
   margin-bottom: 2em;
-  box-sizing: border-box;
 }
 
-header img {
-  max-width: 90%;
+header audio {
+  max-width: 100%;
   height: auto;
-  alt: "Descripción de la imagen"; /* Añade texto alternativo a tus imágenes */
 }
 
-/* Estilos para la barra de navegación */
 nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: lightgray;
   width: 90%;
-  margin-bottom: 2em;
-  box-sizing: border-box;
+  margin: 2em auto;
 }
 
 nav a {
@@ -46,14 +38,15 @@ nav a {
   border-radius: 5px;
   box-sizing: border-box;
   flex: 1 1 auto;
+  
 }
-
 /* Estilos para el formulario */
 form {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra los elementos del formulario */
   width: 90%;
+  margin: 2em auto;
   box-sizing: border-box;
 }
 
@@ -107,9 +100,5 @@ footer {
   }
   nav {
     flex-direction: column;
-  }
-  nav a {
-    min-width: 50px; /* Asegura que los enlaces sean lo suficientemente grandes para ser tocados en dispositivos móviles */
-    min-height: 50px;
   }
 }
