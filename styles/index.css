@@ -54,8 +54,8 @@ footer {
   max-width: 800px;
   margin: 0 auto;
   padding: 1em;
-  border-left: 5px;
-  border-right: 5px;
+  border: solid 10px gray;
+  
 }
 
 /* Media queries para diferentes tamaños de pantalla */

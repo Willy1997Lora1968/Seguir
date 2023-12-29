@@ -14,10 +14,13 @@ header {
   margin-bottom: 2em;
 }
 
-header audio {
-  max-width: 100%;
-  height: auto;
-}
+audio {
+  width: 90%;
+  background-color: gray;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+} 
 
 nav {
   display: flex;
@@ -83,14 +86,13 @@ form input[type="submit"]:hover {
 
 /* Estilos para el pie de página */
 footer {
-  background-color: grey;
+  width: 90%;
+  background-color: gray;
   color: black;
+  border: 1px solid #dee2e6;
   border-radius: 5px;
-  width: 80%; /* Asegura que el pie de página tenga el mismo ancho que la barra de navegación */
-  margin: 1em;
-  padding: 0.5em;
-  text-align: center;
-  box-sizing: border-box;
+  padding: 1em;
+  margin: 2em;
 }
 
 /* Media queries para diferentes tamaños de pantalla */
