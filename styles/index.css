@@ -14,8 +14,35 @@ header {
   margin-bottom: 2em;
 }
 
+/*#time {*/
+/* font-size: 20px; /* Hace que los números sean más anchos */
+/*}*/
+
 #time {
-  font-size: 20px; /* Hace que los números sean más anchos */
+  background-color: rgb(94, 188, 192);
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+#date {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  Color: white;
+  background-color: rgb(94, 188, 192);
+}
+
+#dayOfYear {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  Color: white;
+  background-color: rgb(94, 188, 192);
 }
 
 header img {
@@ -59,7 +86,7 @@ footer {
   margin: 0 auto;
   padding: 1em;
   border: solid 10px gray;
-  
+
 }
 
 /* Media queries para diferentes tamaños de pantalla */
@@ -67,6 +94,7 @@ footer {
   body {
     font-size: 0.8em;
   }
+
   nav {
     flex-direction: column;
   }

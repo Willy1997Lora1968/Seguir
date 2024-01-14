@@ -54,10 +54,10 @@ main {
 footer > p{
   background-color: gray;
   color: black;
-  width: 90%;
+  max-width: 90%;
   border-radius: 5px;
-  margin: 1em auto;
-  padding: 0.5em;
+  margin: 1em;
+  padding: 1em;
   text-align: center;
 }
 

@@ -39,52 +39,22 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://traumatologia.hostinger.app">
 
-  
- 
-<!-- Estilos del reloj digital -->
-
-<!--<style>
-  #digitalClock {
-    position: absolute;
-    right: 0; /* Ajusta la posición del reloj al lado derecho de la página */
-    bottom: 5px; /* Ajusta la posición del reloj desde la parte inferior de la página */
-    background-color: aqua; /* Cambia el color de fondo a verde agua */
-    color: yellow; /* Cambia el color de los números a amarillo */
-    padding: 10px;
-    border-radius: 0; /* Hace que el reloj sea cuadrado */
-    width: 70px; /* Ajusta el ancho del reloj */
-    height: 70px; /* Ajusta la altura del reloj */
-    display: flex; /* Centra el tiempo en el reloj */
-    justify-content: center;
-    align-items: center;
-  }
-
-  #time {
-    font-size: 20px; /* Hace que los números sean más anchos */
-  }
-
-  /* Asegura que el reloj sea responsivo */
-  @media (max-width: 600px) {
-    #digitalClock {
-      right: 10%; /* Ajusta la posición del reloj al lado derecho de la página en pantallas pequeñas */
-    }
-  }-->
-</style>
 </head>
+
 <body>
   <header>
     <h1>Médico, especialista en músculo esquelético:</h1>
     <!-- Reloj digital -->
-  <div id="digitalClock" onclick="clickCount()" >
-  <p id="time"></p>
-  <p>Reloj de Acaz 2 Reyes 20:1-11</p>
-  </div>
+    <div id="digitalClock" onclick="clickCount()">
+      <p id="time"></p>
+      <p id="date"></p>
+      <p id="dayOfYear"></p>
+      <p><u><strong>No posterges las consultas médicas</strong></u></p>
+    </div>
+    
     <img src="/images/dr.jpg" alt="Un Médico">
   </header>
-  
-  
-  
-  
+
   <nav>
     <a href="index.html">Inicio</a>
     <a href="imagenes.html">Imágenes</a>
@@ -125,8 +95,6 @@
     </section>
   </main>
 
-
-
   <footer>
     <p>Tecnología utilizada:</p>
     <ul>
@@ -148,41 +116,15 @@
       <li>GitHub: Plataforma de alojamiento de código que utiliza Git para el control de versiones.</li>
       <li>Servidor privado: Un servidor privado es un servidor físico o virtual que es totalmente controlado por el
         usuario y no es compartido con otros usuarios.</li>
+      <li>Se ha agregado la implementación de Markdown: un tipo de marcado ligero, fácil de escribir y de leer.</li>
     </ul>
-    <p>Se a agregado la implementacion de Markdown.</p>
-    HM & LEI © Todos los derechos reservados 2023
+
+    <p>HM & LEI © Todos los derechos reservados 2023</p>
   </footer>
 
-  <!-- Script del reloj digital -->
-  <script>
-    var timeDisplay = document.getElementById('time');
-    var clickCounter = 0;
 
-    function clickCount() {
-      clickCounter++;
-      if (clickCounter >= 5) {
-        var clock = document.getElementById('digitalClock');
-        clock.style.display = 'none';
-      }
-    }
+  <script src="clock.js"></script>
 
-    function updateClock() {
-      var date = new Date();
-
-      var second = date.getSeconds();
-      var minute = date.getMinutes();
-      var hour = date.getHours();
-
-      // Asegurarse de que las horas, los minutos y los segundos sean de dos dígitos
-      if (hour < 10) hour = '0' + hour;
-      if (minute < 10) minute = '0' + minute;
-      if (second < 10) second = '0' + second;
-
-      timeDisplay.innerHTML = hour + ':' + minute + ':' + second;
-    }
-
-    setInterval(updateClock, 1000);
-  </script>
 </body>
 
 </html>
