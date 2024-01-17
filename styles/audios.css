@@ -15,12 +15,22 @@ header {
 }
 
 audio {
-  width: 90%;
+  width: 80%;
   background-color: gray;
   border: 1px solid #dee2e6;
   border-radius: 5px;
   padding: 10px;
 } 
+
+header p {
+  width: 80%;
+  margin-bottom: 1em; /* Ajusta este valor según el espacio que desees */
+}
+
+header h2 {
+  text-align: center; /* Centrado de texto para los encabezados h2 */
+  width: 80%;
+}
 
 nav {
   display: flex;
@@ -84,15 +94,35 @@ form input[type="submit"]:hover {
   background-color: #45a049;
 }
 
+section {
+  width: 80%; /* Ancho del 80% */
+  margin: 0 auto; /* Centrado horizontalmente */
+}
+
+section article {
+  margin-bottom: 2em; /* Ajusta este valor según el espacio que desees entre los artículos */
+}
+
+section p, section ul li {
+  margin-bottom: 1em; /* Ajusta este valor según el espacio que desees */
+}
+
+section#content {
+  width: 90%; /* Ancho del 80% */
+  margin: 0 auto; /* Centrado horizontalmente */
+  text-align: center; /* Alineación del texto al centro */
+}
+
+
 /* Estilos para el pie de página */
 footer {
-  width: 90%;
+  width: 80%;
   background-color: gray;
   color: black;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
+  border: 3px solid black;
   padding: 1em;
   margin: 2em;
+  border-radius: 20px;
 }
 
 /* Media queries para diferentes tamaños de pantalla */

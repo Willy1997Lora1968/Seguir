@@ -13,14 +13,16 @@ header {
   align-items: center;
   margin-bottom: 2em;
 }
-
-/*#time {*/
-/* font-size: 20px; /* Hace que los números sean más anchos */
-/*}*/
+header >p{
+  .italic {
+    font-style: italic;
+  }
+}
 
 #time {
   background-color: rgb(94, 188, 192);
-  color: white;
+  color: rgb(44, 66, 180);
+  border: 3px solid Black;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -30,18 +32,18 @@ header {
 }
 
 #date {
-  border: 2px solid black;
+  border: 3px solid black;
   padding: 10px;
   border-radius: 20px;
-  Color: white;
+  Color: rgb(44, 66, 180);
   background-color: rgb(94, 188, 192);
 }
 
 #dayOfYear {
-  border: 2px solid black;
+  border: 3px solid black;
   padding: 10px;
   border-radius: 20px;
-  Color: white;
+  Color: rgb(44, 66, 180);
   background-color: rgb(94, 188, 192);
 }
 
@@ -73,9 +75,10 @@ nav a {
 }
 
 /* Estilos para el contenido principal */
-main article {
-  max-width: 800px;
-  margin: 0 auto;
+main section {
+  max-width: 90%;
+  margin: 2em auto;
+  
 }
 
 /* Estilos para el pie de página */
@@ -84,10 +87,14 @@ footer {
   color: white;
   max-width: 800px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 2em;
   border: solid 10px gray;
-
 }
+
+footer ul li {
+  margin-bottom: 1em; /* Ajusta este valor según el espacio que desees */
+}
+
 
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (max-width: 600px) {
