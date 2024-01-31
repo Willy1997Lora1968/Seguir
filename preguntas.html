@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Preguntas sobre Traumatología</title>
+        <link rel="stylesheet" href="styles/preguntas.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Preguntas sobre Traumatología</h1>
+        </header>
+        <form id="formularioPregunta" method="post" action="respuestas.php">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br>
+            <label for="preguntaElegida">¿Qué te gustaría saber sobre traumatología?</label><br>
+            <textarea id="preguntaElegida" name="preguntaElegida" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    
+        <div id="respuestas"></div>
+    
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="preguntas.html">Preguntas</a>
+            <a href="respuestas.php">Respuestas</a>
+        </nav>
+        
+        <script src="preguntas.js"></script>
+            
+        
+    </body>
+    
+    </html>
+    

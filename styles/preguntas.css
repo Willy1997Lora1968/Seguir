@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos del formulario */
+  width: 90%;
+  margin: 2em auto;
+  box-sizing: border-box;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #0c0000;
+  border-radius: 5px;
+  background-color: lightgray;
+  width: 90%; /* Asegura que los campos del formulario ocupen el 90% del ancho disponible */
+  box-sizing: border-box;
+}
+
+/* Estilos para el botón de envío del formulario */
+form input[type="submit"] {
+  cursor: pointer;
+  background-color: blue;
+  border: 1px solid #0c0000;
+  color: white;
+  padding: 16px;
+  text-align: center; /* Centra el texto del botón */
+  text-decoration: none;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  width: 90%; /* Asegura que el botón de envío ocupe el 90% del ancho disponible */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+#repuestas{
+  background-color: blue;
+  color: aqua;
+  width: 80%; /* Ancho del 80% */
+  height: auto;
+  margin: 0 auto; /* Centrado horizontalmente */
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  width: 40%;
+  margin: 2em auto;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: gray;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  
+}

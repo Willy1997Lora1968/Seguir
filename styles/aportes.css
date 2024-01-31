@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  font-size: 16px; /* Tamaño de fuente legible */
 }
 
 /* Estilos para el encabezado */
@@ -12,12 +12,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin-bottom: 2em;
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+  background-color: rgb(94, 188, 192); /* Color de fondo para el encabezado */
 }
 
 header img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -28,7 +30,7 @@ nav {
   flex-wrap: wrap;
   background-color: lightgray;
   width: 90%;
-  margin-bottom: 2em;
+  margin: 1em auto;
 }
 
 nav a {
@@ -43,22 +45,24 @@ nav a {
   flex: 1 1 auto;
 }
 
-/* Estilos para el contenido principal */
-main {
-  max-width: 90%;
-  margin: 0 auto;
+/* Estilos para el contenido y el pie de página */
+.markdown-content, .markdown-contenido, footer {
+  background-color: white;
+  color: black;
+  max-width: 85%;
   text-align: left;
+  line-height: 1.6;
+  margin: 2em auto;
+  padding: 1em;
+  border: solid 10px gray;
+  height: auto;
 }
 
-/* Estilos para el pie de página */
 footer {
-  width: 80%;
-  background-color: gray;
-  color: black;
-  border: 3px solid black;
+  background-color: black;
+  color: white;
   padding: 1em;
-  margin: 2em;
-  border-radius: 20px;
+  line-height: 1.6;
 }
 
 /* Media queries para diferentes tamaños de pantalla */
@@ -66,6 +70,7 @@ footer {
   body {
     font-size: 0.8em;
   }
+
   nav {
     flex-direction: column;
   }

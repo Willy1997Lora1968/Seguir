@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align:center;
 }
 
 /* Estilos para el encabezado */
@@ -50,6 +50,7 @@ header >p{
 header img {
   max-width: 100%;
   height: auto;
+  border: 3px solid Black;
 }
 
 /* Estilos para la barra de navegación */
@@ -73,27 +74,27 @@ nav a {
   box-sizing: border-box;
   flex: 1 1 auto;
 }
+main section h2 h3{
+text-align: center;
 
-/* Estilos para el contenido principal */
-main section {
-  max-width: 90%;
-  margin: 2em auto;
-  
 }
-
+/* Estilos para el contenido principal */
+main section >p {
+  max-width: 90%;
+  margin: 1em auto;
+  text-align: left;
+}
 /* Estilos para el pie de página */
 footer {
-  background-color: black;
-  color: white;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2em;
-  border: solid 10px gray;
+  width: 90%;
+  background-color: gray;
+  color: black;
+  border: 2px solid black;
+  padding: 1em;
+  margin: 2em;
+  border-radius: 20px;
 }
 
-footer ul li {
-  margin-bottom: 1em; /* Ajusta este valor según el espacio que desees */
-}
 
 
 /* Media queries para diferentes tamaños de pantalla */

@@ -52,7 +52,7 @@ nav {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: lightgray;
-  width: 90%;
+  width: 83%;
   margin-bottom: 2em;
 }
 
@@ -76,7 +76,9 @@ section {
 }
 
 section ul li {
-  margin-bottom: 1em;
+  max-width: 90%;
+  margin: 1em auto;
+  text-align: left;
   /* Ajusta este valor según el espacio que desees */
 }
 
