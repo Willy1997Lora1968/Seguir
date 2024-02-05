@@ -27,6 +27,7 @@ try {
     echo "Respuesta actualizada con éxito";
 
 } catch (Exception $e) {
+    // Si hay un error, muéstralo
     echo $e->getMessage();
 } finally {
     // Cierra la conexión a la base de datos y redirige al usuario a admin.php
