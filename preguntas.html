@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <title>Preguntas sobre Traumatología</title>
-        <link rel="stylesheet" href="styles/preguntas.css">
-    </head>
-    
-    <body>
-        <header>
-            <h1>Preguntas sobre Traumatología</h1>
-        </header>
-        <form id="formularioPregunta" method="post" action="respuestas.php">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
-            <label for="correo">Correo electronico:</label>
-            <input type="email" id="correo" name="correo" required><br>
-            <label for="preguntaElegida">¿Que te gustaria saber sobre traumatologia?</label>
-            <textarea id="preguntaElegida" name="preguntaElegida" rows="4" cols="50" required></textarea><br>
-            <input type="submit" value="Enviar">
-        </form>
-    
-        <div id="respuestas"></div>
-    
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="preguntas.html">Preguntas</a>
-            <a href="respuestas.php">Respuestas</a>
-        </nav>
-        
-        <script src="preguntas.js"></script>
-            
-        
-    </body>
-    
-    </html>
-    
+<head>
+    <!-- Definición del conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Configuración para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas sobre Traumatología</title>
+    <link rel="stylesheet" href="styles/preguntas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Preguntas sobre Traumatologia</h1>
+    </header>
+    <!-- Formulario con método POST para enviar los datos al servidor -->
+    <form id="formularioPregunta" method="post" action="respuestas.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="correo">Correo electronico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+        <label for="preguntaElegida">¿Que te gustaria saber sobre traumatologia?</label>
+        <textarea id="preguntaElegida" name="preguntaElegida" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="respuestas"></div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="respuestas.php">Respuestas</a>
+    </nav>
+
+    <footer>
+        <h3>Leisrl &copy; Todos los derechos reservados 2023</h3>
+    </footer>
+
+    <!-- Inclusión del archivo JavaScript -->
+    <script src="preguntas.js"></script>
+
+
+</body>
+
+</html>
