@@ -1,4 +1,9 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // actualizar_respuesta.php
 
 // Incluye el archivo de conexión a la base de datos
@@ -11,6 +16,8 @@ try {
     // Recoge los valores POST del formulario
     $id = $_POST['id'];
     $respuesta = $_POST['respuesta'];
+    
+    print_r($_POST); // Agrega esta líne
 
     // Valida que los campos no estén vacíos
     if (empty($id) || empty($respuesta)) {

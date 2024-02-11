@@ -1,4 +1,5 @@
 <?php
+include 'admin.php';
 // Incluye el archivo 'database.php' que contiene la función para obtener la conexión a la base de datos
 include 'database.php';
 
@@ -10,6 +11,8 @@ try {
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
     $preguntaElegida = $_POST['preguntaElegida'];
+
+    print_r($_POST); // Agrega esta línea
 
     // Verifica si alguno de los campos está vacío
     if (empty($nombre) || empty($correo) || empty($preguntaElegida)) {

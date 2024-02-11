@@ -68,47 +68,27 @@ nav a {
   flex: 1 1 auto;
 }
 
-section {
+.secion {
   width: 80%;
   /* Ancho del 80% */
   margin: 0 auto;
   /* Centrado horizontalmente */
 }
 
-section ul li {
-  max-width: 90%;
+.secion ul li {
   margin: 1em auto;
   text-align: left;
   /* Ajusta este valor según el espacio que desees */
 }
-
-article.content {
-  width: 80%;
-  /* Ancho del 80% */
-  margin: 0 auto;
-  /* Centrado horizontalmente */
-}
-
-article.content h2,
-article.content h3 {
-  text-align: center;
-  /* Centrado de texto para los encabezados h2 y h3 */
-}
-
-article.content p {
-  margin-bottom: 1em;
-  /* Ajusta este valor según el espacio que desees */
-}
-
 
 /* Estilos para el pie de página */
 footer {
   width: 80%;
   background-color: gray;
   color: black;
-  border: 3px solid black;
+  border: 2px solid black;
   padding: 1em;
-  margin: 2em;
+  margin: 1em;
   border-radius: 20px;
 }
 

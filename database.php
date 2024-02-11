@@ -1,4 +1,10 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+//database.php
 require 'vendor/autoload.php';
 
 function getDbConnection() {
@@ -15,20 +21,12 @@ function getDbConnection() {
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Verificar conexión
-    if ($conn->connect_error) {
-        error_log("La conexión ha fallado: " . $conn->connect_error);
-        return null;
+    if ($conn) {
+        echo 'Conexión exitosa';
     } else {
-        return $conn;
+        echo 'Conexión fallida';
     }
-}
 
-// Prueba de la conexión
-$conn = getDbConnection();
-if ($conn === null) {
-    echo "La conexión a la base de datos ha fallado.";
-} else {
-    echo "La conexión a la base de datos ha sido exitosa.";
+    return $conn;
 }
 ?>
-
