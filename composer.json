@@ -1,0 +1,9 @@
+{
+    "name": "lrisrl/seguir",
+    "description": "Description []: Un sitio web dedicado a la traumatología",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "minimum-stability": "stable"
+}
