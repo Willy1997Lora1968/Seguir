@@ -4,7 +4,8 @@ include 'admin.php';
 include 'database.php';
 
 // Obtiene la conexión a la base de datos
-$conn = database();
+$conn = getDbConnection();
+
 
 try {
     // Recupera los datos enviados por el método POST

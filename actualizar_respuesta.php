@@ -10,7 +10,8 @@ error_reporting(E_ALL);
 include 'database.php';
 
 // Conéctate a la base de datos
-$conn = database();
+$conn = getDbConnection();
+
 
 try {
     // Recoge los valores POST del formulario
