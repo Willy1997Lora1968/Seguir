@@ -1,7 +1,5 @@
 # .gitignore
 .env
-vendor/
 admin.php
-composer.json
-composer.lock
+
 
